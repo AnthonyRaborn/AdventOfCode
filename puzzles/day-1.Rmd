@@ -9,7 +9,6 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# Day 1
 ## Report Repair
 ### Part 1
 
@@ -73,7 +72,7 @@ expandedInput <-
 
 ```
 
-```{r puzzle-solve}
+```{r puzzle-solve-1}
 # find the sums of the numbers
 
 expandedInput[,3] <-
@@ -108,7 +107,7 @@ expandedInput <-
                         expandedInput[,1] != expandedInput[,3]),]
 ```
 
-```{r puzzle-solve}
+```{r puzzle-solve-2}
 # find the sums of the numbers
 expandedInput[,4] <-
   rowSums(expandedInput)
